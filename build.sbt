@@ -21,7 +21,7 @@ libraryDependencies ++= {
   Seq(
     "com.typesafe.akka"          %%  "akka-actor"               % "2.3.7",
     "com.typesafe.akka"          %%  "akka-stream-experimental" % "0.10",
-    "io.scalac"                  %%  "reactive-rabbit"          % "0.2.1",
+    "io.scalac"                  %%  "reactive-rabbit"          % "1.0.3",
     "com.typesafe.scala-logging" %%  "scala-logging-slf4j"      % "2.1.2",
     "ch.qos.logback"             %   "logback-core"             % "1.1.2",
     "ch.qos.logback"             %   "logback-classic"          % "1.1.2",

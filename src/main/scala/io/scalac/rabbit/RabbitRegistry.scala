@@ -4,11 +4,8 @@ import io.scalac.amqp.{Direct, Exchange, Queue}
 
 
 object RabbitRegistry {
+  val sensorQueue = Queue("/topic/pilots/starterkit/sensor", durable = true)
 
-  val inboundExchange = Exchange("censorship.inbound.exchange", Direct, true)
-  val inboundQueue = Queue("censorship.inbound.queue")
-    
-  val outboundExchange = Exchange("censorship.outbound.exchange", Direct, true)
-  val outOkQueue = Queue("censorship.ok.queue")
-  val outNokQueue = Queue("censorship.nok.queue")
+  val announceQueue = Queue("/app/pilots/announce", durable = true)
+  val powerQueue = Queue("/app/pilots/power", durable = true)
 }
